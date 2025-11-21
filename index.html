@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Подорожі світом — Lab2</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#">Travel<span></a>
+    <nav class="main-nav" role="navigation" aria-label="Головна навігація">
+      <ul class="nav-list">
+        <li><a href="#">Головна</a></li>
+        <li><a href="pages/news.html">Новини</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Пошук"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a class="icon-btn" href="pages/login.html" aria-label="Вхід"><i class="fa-regular fa-user"></i></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner container">
+      <h1>Відкрий світ разом з нами</h1>
+      <p>Плануйте маршрути, знаходьте поради та надихайтеся історіями мандрів.</p>
+      <a class="btn-primary" href="#cards">Почати</a>
+    </div>
+  </section>
+
+  <section id="cards" class="cards container">
+    <h2 class="section-title">Популярні напрямки</h2>
+    <div class="cards-grid">
+      <article class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Мальдіви">
+        </div>
+        <div class="card-body">
+          <h3>Мальдіви</h3>
+          <p>Кришталево чисті води та пляжі — ідеальне місце для релаксу.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Японія">
+        </div>
+        <div class="card-body">
+          <h3>Японія</h3>
+          <p>Поєднання традиційної культури та ультрасучасних технологій.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1594069758873-e79e9075eb7d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Швейцарія">
+        </div>
+        <div class="card-body">
+          <h3>Швейцарія</h3>
+          <p>Гірські маршрути, озера та кришталево чисте повітря.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="news container">
+    <h2 class="section-title">Останні новини</h2>
+    <div class="news-grid">
+      <article class="news-item">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Осінні подорожі">
+        <div class="news-body">
+          <h3>Топ-5 країн для подорожі цієї осені</h3>
+          <p>Осінь — ідеальний час, щоб відвідати країни з помірним кліматом та красивими краєвидами. Ми зібрали добірку найцікавіших напрямків, де можна насолодитися природою без натовпів туристів.</p>
+          <a class="news-link" href="pages/news.html">Читати далі</a>
+        </div>
+      </article>
+
+      <article class="news-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Планування">
+        <div class="news-body">
+          <h3>Як зекономити на авіаквитках: практичні поради</h3>
+          <p>Правильне планування та інструменти для моніторингу цін допоможуть знайти вигідні варіанти перельотів. Ділимося порадами, які реально працюють.</p>
+          <a class="news-link" href="pages/news.html">Читати далі</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<script>
+document.getElementById('searchBtn')?.addEventListener('click', ()=>{
+  const q = prompt('Введіть запит для пошуку:');
+  if(q) alert('Шукати: ' + q);
+});
+</script>
+</body>
+</html>
